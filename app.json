@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/work/work",
+    "pages/assistant/assistant",
+    "pages/add/add",
+    "pages/analyze/analyze",
+    "pages/mine/mine",
+    "custom-tab-bar/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "早上好！张三先生",
+    "navigationBarBackgroundColor": "#272a3b"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/work/work",
+        "text": "工作"
+      },
+      {
+        "pagePath": "pages/assistant/assistant",
+        "text": "助手"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "常用"
+      },
+      {
+        "pagePath": "pages/analyze/analyze",
+        "text": "分析"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,117 @@
+<!--pages/work/work.wxml-->
+<view class="header">
+	<text>早上好！张三先生</text>
+	<image src="/images/消息.png" mode=""/>
+</view>
+
+<swiper	
+class="swiper_banner"
+indicator-dots="{{true}}"
+circular="{{true}}">
+	<swiper-item wx:for="{{list}}" wx:key="index">
+		<image src="{{item.imgUrl}}"  class="custom_img"/>
+	</swiper-item>
+</swiper>
+
+<!-- 导航栏 -->
+<view class="navigation">
+	<view>
+		<image src="/images/公文包.png" />
+		<text>功能1</text>
+	</view>
+	<view>
+		<image src="/images/圆盘.png" />
+		<text>功能2</text>
+	</view>
+	<view>
+		<image src="/images/小黑板.png" />
+		<text>功能3</text>
+	</view>
+	<view>
+		<image src="/images/笔记本.png" />
+		<text>功能4</text>
+	</view>
+	<view>
+		<image src="/images/铅笔.png" />
+		<text>功能5</text>
+	</view>
+</view>
+
+<!-- 功能栏 -->
+<view class="feature">
+	<view>
+		<image src="/images/camera.png" />
+		<text>功能A</text>
+	</view>
+		<view bindtap="powerDrawer" data-statu="open">
+		<image src="/images/camera.png" />
+		<text>功能B</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能C</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能D</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能E</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能F</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能G</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能H</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能I</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能J</text>
+	</view>
+</view>
+
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+
+<!-- 遮罩层 -->
+<view catchtap="hidePopup" class="mask" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+	<view class="drawer_title">功能B</view>
+
+	<view class="pop_up">
+		<view>
+		<image src="/images/camera.png" />
+		<text>功能1</text>
+	</view>
+		<view>
+		<image src="/images/camera.png" />
+		<text>功能2</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能3</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能4</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能5</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能6</text>
+	</view>	<view>
+		<image src="/images/camera.png" />
+		<text>功能7</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能8</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能9</text>
+	</view><view>
+		<image src="/images/camera.png" />
+		<text>功能10</text>
+	</view>
+	</view>
+</view>

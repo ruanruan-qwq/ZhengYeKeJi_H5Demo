@@ -1,0 +1,116 @@
+/* pages/work/work.wxss */
+
+.header{
+	background-color: #272a3b;
+	color: #88c000;
+	text-align: center;
+	height: 100rpx;
+	font-size: 40rpx;
+	line-height: 100rpx;
+}
+
+.header image{
+	margin-top: 20rpx;
+}
+
+.custom_img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.header image{
+	position: absolute;
+	right: 0;
+	top: -2rpx;
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.wx-swiper-dots{
+	position:relative;
+	top: 75%;
+}
+
+.swiper_banner .wx-swiper-dot {
+	border: 2rpx solid #88c000;
+	background-color: rgba(0,0,0,0);
+}
+ 
+.swiper_banner .wx-swiper-dot-active {
+	background-color: #88c000;
+}
+
+.navigation{
+	/* height: 50px; */
+	display: flex;
+	justify-content: space-around;
+	margin-top: -48rpx;
+	color: #ccc;
+	background-color: #272a3b;
+	font-size: 24rpx;
+	position: relative;
+	z-index: 50;
+}
+
+.navigation view, .feature view,.pop_up view{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation image, .feature image, .pop_up image{
+	height: 30px;
+	width: 30PX;
+	object-fit: cover;
+	margin: 20rpx 0;
+}
+
+.feature, .pop_up{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feature view{
+	height: 160rpx;
+	flex-basis: calc(25% - 2px);
+	border: 2rpx solid #ccc;
+}
+
+.drawer_box{
+	background-color: #fff;
+	position: fixed;
+	top: 160rpx;
+	left: 20rpx;
+	right: 20rpx;
+	z-index: 99;
+	border-radius: 10rpx;
+	overflow: hidden;
+	border: 2rpx solid #000;
+}
+
+.drawer_title{
+	width: 100%;
+	background-color: #272a3b;
+	color: #88c000;
+	text-align: center;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 40rpx;
+}
+
+.pop_up view{
+	flex-basis: 25%;
+	color: #ccc;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
